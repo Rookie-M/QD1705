@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/*
+	这是购买的详情页
+*/
+body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre, form, fieldset, legend, input, button, textarea, hr {
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: #121212;
+  font: 12px/1.5 "Microsoft Yahei","\5FAE\8F6F\96C5\9ED1",arial,sans-serif; }
+
+div {
+  display: block; }
+
+a {
+  text-decoration: none;
+  color: #121212;
+  transition: color 0.2s linear; }
+
+ul, ol {
+  list-style: none; }
+
+.top .inter .top-links a:hover, .top .inter .top-login a:hover, .nav .inter .nav-box li a:hover, .footer-box .inter .server li a:hover strong, .footer-box .col-inter .col-links a:hover {
+  color: #10bad1; }
+
+.nav .inter .shopp-car li a .cart-icon, .footer-box .inter .server li a .ser-icon, .copy-right .copyright-infor .language, .copy-right .inter .col-contact a .tel-icon {
+  background: url(../images/m-icon.png) no-repeat; }
+
+.inter {
+  width: 1200px;
+  margin: 0 auto; }

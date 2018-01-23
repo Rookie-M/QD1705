@@ -1,0 +1,324 @@
+@charset "UTF-8";
+/* 
+	这是主页面样式
+*/
+body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre, form, fieldset, legend, input, button, textarea, hr {
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: #121212;
+  font: 12px/1.5 "Microsoft Yahei","\5FAE\8F6F\96C5\9ED1",arial,sans-serif;
+  overflow-x: hidden; }
+
+div {
+  display: block; }
+
+a {
+  text-decoration: none;
+  color: #121212;
+  transition: color 0.2s linear; }
+
+ul, ol {
+  list-style: none; }
+
+.banner {
+  position: relative;
+  height: 560px; }
+
+.banner-box {
+  position: absolute;
+  left: 50%;
+  margin-left: -1280px;
+  width: 2560px; }
+
+.b-slider-box {
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+
+.b-slider-box ul {
+  position: relative;
+  width: auto;
+  height: 560px; }
+
+.b-slider-box ul li {
+  /*position: absolute;*/
+  overflow: hidden; }
+
+.b-slider-box ul li a img {
+  display: block; }
+
+.b-slider-box ol {
+  /* width: 430px; */
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  /* left: -215px; */
+  z-index: 3;
+  margin-left: -215px; }
+
+.b-slider-box ol li {
+  height: 5px;
+  border-radius: 20px;
+  width: 100px;
+  float: left;
+  margin-right: 10px;
+  border: 1px solid black; }
+
+.b-slider-box .active {
+  background: #fff; }
+
+/*
+	正文内容
+*/
+.mall-section {
+  margin-top: 33px; }
+
+.start-title {
+  position: relative;
+  height: 30px;
+  line-height: 30px; }
+
+.start-title h3 {
+  font-size: 18px;
+  font-weight: normal; }
+
+.start-moto {
+  position: relative;
+  padding-left: 600px;
+  margin-top: 14px;
+  background: #fff;
+  height: 444px; }
+
+.start-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 600px;
+  height: 444px;
+  overflow: hidden;
+  z-index: 4; }
+
+.start-mod li {
+  float: left;
+  width: 300px;
+  position: relative;
+  height: 444px; }
+
+.i-mark {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 60px;
+  height: 25px;
+  color: #fff;
+  text-align: center;
+  line-height: 25px;
+  font-size: 12px;
+  z-index: 4; }
+
+.line {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 0;
+  overflow: hidden;
+  border-left: 1px solid #e6e6e6;
+  z-index: 2; }
+
+.start-mod li a img {
+  position: relative;
+  z-index: 3; }
+
+.start-mod li a .discript {
+  margin-top: 44px;
+  padding: 0 29px;
+  color: #272423; }
+
+.start-moto li a .discript .tit {
+  height: 26px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: normal;
+  overflow: hidden; }
+
+.start-moto li a .price {
+  margin-top: 2px;
+  line-height: 24px;
+  font-size: 14px; }
+
+.start-moto li a .price span {
+  line-height: 24px;
+  font-size: 14px;
+  color: black; }
+
+.start-moto li a .discript .txt {
+  margin-top: 8px;
+  height: 96px;
+  font-size: 14px;
+  line-height: 24px;
+  overflow: hidden;
+  color: black; }
+
+.i-mark-xp {
+  background: #79ce0b; }
+
+.i-mark-rx {
+  background: #fa8702; }
+
+.i-mark-zp {
+  background: #10bad0; }
+
+/*
+	moto手机
+*/
+.moto-section {
+  margin-top: 33px; }
+
+.moto-section-title {
+  position: relative;
+  height: 30px;
+  line-height: 30px; }
+
+.moto-section-title h3 {
+  font-size: 18px;
+  font-weight: normal; }
+
+.moto-section-title a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #999; }
+
+.mods-top {
+  position: relative;
+  margin-top: 14px;
+  height: 400px;
+  overflow: hidden; }
+
+.bx-wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 0; }
+
+.bx-viewport {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+  left: 0;
+  background: #fff; }
+
+.bx-viewport .bxslider {
+  width: auto;
+  position: relative; }
+
+.bx-viewport .bxslider li {
+  float: none;
+  list-style: none;
+  position: relative;
+  width: 1200px;
+  /*height: 560px;*/ }
+
+.mods-top .bx-viewport .bxslider li a {
+  color: #fff; }
+
+.mods-top .bx-viewport .bxslider li a img {
+  display: block; }
+
+.mods-top .discript {
+  position: absolute;
+  left: 300px;
+  top: 113px;
+  width: 290px;
+  overflow: hidden;
+  color: #fff; }
+
+.mods-top .discript .tit {
+  height: 36px;
+  line-height: 36px;
+  font-size: 24px;
+  font-weight: normal;
+  overflow: hidden;
+  color: #fff; }
+
+.mods-top .discript .price span {
+  line-height: 24px;
+  font-size: 14px;
+  color: #fff; }
+
+.mods-top .discript p {
+  margin-top: 8px;
+  line-height: 24px;
+  height: 96px;
+  overflow: hidden;
+  font-size: 14px;
+  color: #fff; }
+
+.mods-top .discript .view-btn {
+  display: inline-block;
+  line-height: 24px;
+  margin-top: 21px;
+  padding-left: 25px;
+  background: url(../images/m-icon.png) no-repeat 0 -233px;
+  color: #fff; }
+
+.moto-mod-wrap {
+  overflow: hidden;
+  background: #fff; }
+
+.index-product-list {
+  position: relative;
+  margin-top: -1px;
+  margin-left: -1px; }
+
+.index-product-list li {
+  float: left;
+  position: relative;
+  width: 269px;
+  height: 300px;
+  padding: 14px 15px 0;
+  border-left: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+  text-align: center; }
+
+.index-product-list li img {
+  display: block;
+  margin: 0 auto;
+  transition: all 0.2 ease; }
+
+.index-product-list li:hover img {
+  transform: scale(1.0211); }
+
+.discript {
+  margin-top: 15px; }
+
+.discript .tit {
+  height: 24px;
+  line-height: 24px;
+  font-size: 14px;
+  font-style: normal;
+  overflow: hidden;
+  color: #121212; }
+
+.discript .txt {
+  margin-top: 3px;
+  height: 18px;
+  font-size: 12px;
+  line-height: 18px;
+  overflow: hidden;
+  color: #aaa; }
+
+.discript .price {
+  margin-top: 5px;
+  height: 20px;
+  line-height: 20px; }
+
+.discript .price span {
+  color: #ff424b;
+  font-size: 14px; }
+
+.discript .price del {
+  margin-left: 10px;
+  color: #fff; }

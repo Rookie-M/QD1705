@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/*
+	这是购物车的样式
+*/
+body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre, form, fieldset, legend, input, button, textarea, hr {
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: #121212;
+  font: 12px/1.5 "Microsoft Yahei","\5FAE\8F6F\96C5\9ED1",arial,sans-serif; }
+
+div {
+  display: block; }
+
+a {
+  text-decoration: none;
+  color: #121212;
+  transition: color 0.2s linear; }
+
+ul, ol {
+  list-style: none; }
+
+.top .inter .top-links a:hover, .top .inter .top-login a:hover, .nav .inter .nav-box li a:hover, .footer-box .inter .server li a:hover strong, .footer-box .col-inter .col-links a:hover {
+  color: #10bad1; }
+
+.nav .inter .shopp-car li a .cart-icon, .footer-box .inter .server li a .ser-icon, .copy-right .copyright-infor .language, .copy-right .inter .col-contact a .tel-icon {
+  background: url(../images/m-icon.png) no-repeat; }
+
+.inter {
+  width: 1200px;
+  margin: 0 auto; }
+
+.progress-bar {
+  height: 37px;
+  position: absolute;
+  top: 11px;
+  right: 0;
+  border-bottom: 1px solid #00586e; }
+
+.progress-bar li {
+  float: left;
+  position: relative;
+  width: 56px;
+  height: 37px;
+  text-align: center; }
+
+.progress-bar li span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 36px;
+  border-bottom: 3px solid #00586e;
+  line-height: 36px;
+  font-size: 14px;
+  color: #0a647b; }
+
+.progress-bar .current span {
+  color: #0eabc1;
+  border-bottom-color: #0eabc1; }
+
+.progress-bar .centerItem {
+  margin: 0 110px; }
+
+/*主体内容*/
+.empty-cart-box {
+  margin: 36px 0 0;
+  padding: 60px 0 60px;
+  border: 1px solid #e4e4e4;
+  background: #fff; }
+
+.empty-cart-box .empty-cart-icon {
+  display: block;
+  width: 420px;
+  height: 340px;
+  margin: 0 auto;
+  background: url(../images/emptycart-bg.png) no-repeat center; }
+
+.empty-cart-box p {
+  height: 24px;
+  margin: 15px 0 0 0;
+  color: #999;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center; }
+
+.empty-cart-box a {
+  display: block;
+  width: 180px;
+  height: 50px;
+  overflow: hidden;
+  margin: 25px auto 0;
+  background: #10bad1;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  line-height: 50px; }

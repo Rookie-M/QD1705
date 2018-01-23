@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/*商品列表样式*/
+/*//公共部分*/
+body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre, form, fieldset, legend, input, button, textarea, hr {
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: #121212;
+  font: 12px/1.5 "Microsoft Yahei","\5FAE\8F6F\96C5\9ED1",arial,sans-serif; }
+
+div {
+  display: block; }
+
+a {
+  text-decoration: none;
+  color: #121212;
+  transition: color 0.2s linear; }
+
+ul, ol {
+  list-style: none; }
+
+.top .inter .top-links a:hover, .top .inter .top-login a:hover, .nav .inter .nav-box li a:hover, .footer-box .inter .server li a:hover strong, .footer-box .col-inter .col-links a:hover, .product-sort a:hover {
+  color: #10bad1; }
+
+.alist {
+  color: #10bad1; }
+
+.nav .inter .shopp-car li a .cart-icon, .footer-box .inter .server li a .ser-icon, .copy-right .copyright-infor .language, .copy-right .inter .col-contact a .tel-icon {
+  background: url(../images/m-icon.png) no-repeat; }
+
+.inter {
+  width: 1200px;
+  margin: 0 auto; }
+
+/*//主体内容*/
+body {
+  background: #f1f1f1; }
+
+.product-sort {
+  margin-top: 18px;
+  font-size: 14px;
+  line-height: 34px; }
+
+.product-sort span {
+  margin-right: 38px;
+  color: #999; }
+
+.product-sort a {
+  margin-right: 47px; }
+
+.list-box {
+  padding-top: 6px;
+  overflow: hidden; }
+
+.list-box .product-list {
+  position: relative;
+  margin-left: -12px; }
+
+.list-box .product-list li {
+  position: relative;
+  float: left;
+  margin-left: 12px;
+  margin-top: 12px;
+  width: 291px;
+  padding: 30px 0 0;
+  height: 277px;
+  text-align: center;
+  line-height: 20px;
+  background: #fff; }
+
+.list-box .product-list li:hover img {
+  transform: scale(1.0211); }
+
+.list-box .product-list li a {
+  color: #121212; }
+
+.list-box .product-list li a img {
+  display: block;
+  margin: 0 auto;
+  vertical-align: middle;
+  transition: all 0.2s ease;
+  border: 0 none; }
+
+.list-box .product-list li a h4 {
+  margin-top: 15px;
+  height: 20px;
+  font-size: 14px;
+  overflow: hidden;
+  font-weight: 100; }
+
+.list-box .product-list li a .price-box {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #ec2a00; }
+
+.list-box .product-list li a .price-box .price {
+  font-size: 14px;
+  color: #ec2a00; }
