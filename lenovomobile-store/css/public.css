@@ -80,12 +80,12 @@ ul, ol {
   position: absolute;
   top: -32px;
   left: 0;
-  z-index: 1000; }
+  z-index: 1; }
 
 .nav .inter {
   position: relative;
   width: 1200px;
-  z-index: 1000; }
+  z-index: 1; }
 
 .nav .inter .logo {
   float: left;
@@ -348,3 +348,404 @@ footer {
   height: 34px;
   margin-top: -17px;
   background-position: 0 -157px; }
+
+/*
+	登录注册
+*/
+/* 注册 */
+/*主框架*/
+.register-layer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid #e4e4e4;
+  background-color: #fff;
+  z-index: 9000;
+  width: 440px;
+  height: 526px;
+  margin: -263px 0 0 -220px; }
+
+/*背景*/
+.layer-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  filter: none; }
+
+/*标题*/
+.register-layer .pop-layer-head, .enter-layer .pop-layer-head {
+  height: 58px;
+  padding: 0 29px;
+  background-color: #f1f1f1; }
+
+.register-layer .pop-layer-head .fleft, .enter-layer .pop-layer-head .fleft {
+  font-size: 16px;
+  line-height: 58px;
+  color: #121212;
+  font-weight: 400; }
+
+.register-layer .pop-layer-head .close, .enter-layer .pop-layer-head .close {
+  position: absolute;
+  display: block;
+  top: 22px;
+  right: 29px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  background: url(../images/person.png) no-repeat 0 -198px; }
+
+/*注册主体框架*/
+.register-layer .iLogFrame {
+  display: block;
+  padding: 15px 7% 20px; }
+
+/*主体内容*/
+/*公共*/
+.register-layer .iLogFrame .hd ul .txtUser, .register-layer .iLogFrame .hd ul .txtPass, .register-layer .iLogFrame .hd ul .capture .fleft {
+  height: 33px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  position: relative; }
+
+.register-layer .iLogFrame .hd ul .capture .fleft:first-child {
+  width: 65%;
+  float: left; }
+
+/*label标签样式公共*/
+.register-layer .iLogFrame .hd ul .txtUser label, .register-layer .iLogFrame .hd ul label {
+  border-right: 1px solid #ccc;
+  width: 14%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  text-align: center; }
+
+.register-layer .iLogFrame .hd ul .capture label {
+  width: 21%; }
+
+/*label的图片*/
+.register-layer .iLogFrame .hd ul .txtUser label img, .register-layer .iLogFrame .hd ul .txtPass label img, .register-layer .iLogFrame .hd ul .capture img {
+  margin-top: 10px;
+  width: 15px;
+  border: 0; }
+
+.register-layer .iLogFrame .hd ul .txtUser .ParentCls {
+  display: block;
+  width: 83.9%;
+  height: 100%;
+  float: left; }
+
+/*输入框*/
+.register-layer .iLogFrame .hd ul .txtUser .ParentCls input, .register-layer .iLogFrame .hd ul input {
+  float: left;
+  padding: 0 0 0 10px;
+  width: 71%;
+  height: 100%;
+  font-size: 15px;
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+  outline: none; }
+
+.register-layer .iLogFrame .hd ul .txtPHint {
+  margin-bottom: 10px; }
+
+.register-layer .iLogFrame .hd ul .txtPHint span {
+  display: inline-block; }
+
+.register-layer .iLogFrame .hd ul .capture {
+  border: none;
+  overflow: hidden; }
+
+/*.register-layer .iLogFrame .hd ul */
+.register-layer .iLogFrame .hd ul .capture .capImg {
+  height: 45px;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  box-sizing: border-box;
+  width: 31%;
+  margin-left: 3.4%;
+  /*border: 1px solid red;*/
+  float: right; }
+
+.register-layer .iLogFrame .hd ul .capture .capImg span {
+  margin-top: 0;
+  color: black;
+  font-size: 20px;
+  display: block;
+  /*border: 1px solid red;*/
+  text-align: center; }
+
+.register-layer .iLogFrame .hd ul .capture .capImg a {
+  margin-top: 0;
+  color: black;
+  font-size: 20px;
+  display: block;
+  /*border: 1px solid red;*/
+  text-align: center; }
+
+.activeCode {
+  float: left;
+  padding: 0 0 0 10px;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+  outline: none;
+  background-color: #10bad0;
+  color: #fff; }
+
+.register-layer .iLogFrame .hd ul .capture .codebutton {
+  color: #fff; }
+
+.register-layer .iLogFrame .hd ul .capture .capImg input {
+  background-color: #10bad0;
+  color: #fff;
+  width: 100%;
+  height: 45px;
+  outline: none; }
+
+.register-layer .iLogFrame .hd ul .capture .apollo {
+  padding: 0;
+  text-align: left;
+  margin: 5px 0 15px 0;
+  float: left;
+  width: 100%; }
+
+.register-layer .iLogFrame .hd ul .capture .apollo em {
+  font-style: normal;
+  font-weight: 400;
+  color: #6fc9f0; }
+
+.register-layer .iLogFrame .hd ul {
+  overflow: hidden; }
+
+/*协议*/
+.register-layer .bd {
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 10px; }
+
+/*输入有误的信息*/
+.register-layer .bd .errMsg {
+  margin-bottom: 5px;
+  height: 20px;
+  color: #eb403c;
+  overflow: hidden;
+  /*border: 1px solid red;*/ }
+
+.register-layer .bd .errMsg li {
+  padding-left: 18px;
+  background: url(../images/login-icon/error.png) left center no-repeat;
+  display: none;
+  position: absolute; }
+
+.register-layer .bd .errMsg .show {
+  display: block;
+  height: 20px;
+  background: none; }
+
+/*注册按钮*/
+.register-layer .bd input {
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  border: none;
+  color: #fff;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 3px;
+  background-color: #10bad0;
+  /*outline: none;*/ }
+
+.register-layer .bd span {
+  font-size: 13px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  color: #999;
+  margin-bottom: 10px; }
+
+.register-layer .bd span a {
+  color: #10bad0; }
+
+/*跳转登录*/
+.register-layer .ft span {
+  text-align: center;
+  width: 100%;
+  display: inline-block; }
+
+.register-layer .ft span a {
+  background-color: #10bad0;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 3px; }
+
+/*登录*/
+.enter-layer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid #e4e4e4;
+  background-color: #fff;
+  z-index: 9000;
+  width: 440px;
+  margin: -263px 0 0 -220px; }
+
+/*主体框架*/
+.enter-layer-main {
+  padding: 15px 7% 20px;
+  height: 300px; }
+
+.enter-layer-main .main-head {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 0; }
+
+.enter-layer-main .main-head a {
+  display: inline-block;
+  width: 50%;
+  border-bottom: 2px solid #bbb;
+  padding-bottom: 5px;
+  font-size: 14px;
+  color: #7f7f7f; }
+
+.enter-layer-main .main-head .on {
+  color: #10bad0;
+  border-bottom: 2px solid #10bad0; }
+
+.enter-layer-main .main-body .main-body-head {
+  margin-bottom: 5px; }
+
+.enter-layer-main .main-body .main-body-head .txtUser, .enter-layer-main .main-body .main-body-head .txtPass {
+  height: 33px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  position: relative; }
+
+.enter-layer-main .main-body .main-body-head .txtUser label, .enter-layer-main .main-body .main-body-head .txtPass label {
+  border-right: 1px solid #ccc;
+  width: 14%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  text-align: center; }
+
+.enter-layer-main .main-body .main-body-head .txtUser label img, .enter-layer-main .main-body .main-body-head .txtPass label img {
+  width: 15px;
+  border: 0;
+  margin-top: 10px; }
+
+.enter-layer-main .main-body .main-body-head .txtUser input, .enter-layer-main .main-body .main-body-head .txtPass input {
+  float: left;
+  padding: 0 0 0 10px;
+  width: 81%;
+  border: none;
+  outline: none;
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.enter-layer-main .main-body .main-body-bd {
+  margin-bottom: 5px;
+  overflow: hidden; }
+
+.enter-layer-main .main-body .main-body-bd .body-left {
+  float: left; }
+
+.enter-layer-main .main-body .main-body-bd .body-left label {
+  margin-right: 10px; }
+
+.enter-layer-main .main-body .main-body-bd .body-right {
+  float: right; }
+
+.enter-layer-main .main-body .main-body-bd .body-right a {
+  color: #10bad0; }
+
+.enter-layer-main .main-body .main-body-footer {
+  margin-bottom: 5px;
+  height: 20px;
+  color: #eb403c;
+  overflow: hidden;
+  /*border: 1px solid red;*/ }
+
+.enter-layer-main .main-footer input {
+  background-color: #10bad0;
+  display: block;
+  width: 100%;
+  border: 0;
+  outline: none;
+  margin-bottom: 10px;
+  color: #fff;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 3px;
+  cursor: pointer; }
+
+.enter-layer-main .Id3login {
+  text-align: center;
+  color: #666; }
+
+.enter-layer-main .Id3login a {
+  margin: 0 12px;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  font-size: 14px; }
+
+.enter-layer-main .Id3login a img {
+  padding-right: 6px;
+  display: block;
+  float: left; }
+
+#reCode, #telreCode {
+  width: 65%; }
+
+.authCode {
+  width: 40%;
+  position: absolute;
+  right: -50%;
+  top: 0;
+  height: 50px; }
+
+.authCode img {
+  width: 100%;
+  height: 100%; }
+
+#gainCode {
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: -90%; }
+
+#gainCode input {
+  /*border: 1px solid red;*/
+  height: 40px;
+  width: 45%;
+  background-color: #10bad0;
+  color: #fff;
+  border-radius: 3px; }
+
+.telEnter {
+  position: relative;
+  top: 0px;
+  display: none; }
+
+.passEnter {
+  position: relative;
+  display: block; }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>联想-摩托罗拉手机商城</title>
+	<title>联想-购物车</title>
 	<link rel="stylesheet" href="css/cart.min.css">
 	<link rel="stylesheet" href="css/public.min.css">
 	<script type = "text/javascript" src = "js/require.js" async = "true" defer data-main = "js/main"></script>
@@ -20,8 +20,8 @@
 				<a href=""><img src="../images/lenovo-top-logo.png" alt="">联想官网</a>
 			</div>
 			<div class="top-login">
-				<a href="">注册</a>
-				<a href="">登录</a>
+				<a href="" id="register" onclick="return false;">注册</a>
+				<a href="" id="enter" onclick="return false;">登录</a>
 				<a href="">Z码通道</a>
 			</div>
 		</div>
@@ -57,11 +57,34 @@
 
 	<!-- 结算 -->
 	<section>
-		<div class="inter" cartempty="cartempty" style="">
-			<div class="empty-cart-box">
-				<i class="empty-cart-icon"><!-- 空空如也，快去购物 --></i>
+		<div class="inter empty-cart" cartempty="cartempty" style="display: block;"> 
+			<!-- <div class="empty-cart-box">
+				<i class="empty-cart-icon">空空如也，快去购物</i>
 				<p>空空如也，快去购物~</p>
 				<a href="http://www.motorola.com.cn/store" id="emptyCart" class="buy-button">去购物</a>
+			</div> -->
+		</div>
+		<div class="inter">
+			<div class="shopping-cart-wrap" id="mycart">
+				<div class="shopping-cart-head clearfix">             
+					<span class="item1">商品名称</span>             
+					<span class="item2">单价</span>             
+					<span class="item3">数量</span>             
+					<span class="item4">小计</span>             
+					<span class="item5">操作</span>            
+				</div>            
+				<ul class="shopping-cart">
+				</ul>     
+				<div class="total-box clearfix">      
+					<div class="submit-button-box">       
+						<p style="font-size:13px"></p>       
+						<a id="toBalance" tobalance="" href="" class="buy-button">去结算</a>      
+					</div>            
+					<div class="total-price-box">       
+						<p><span class="total-price"></p>       
+						<a href="store-list.html" id="backToShopping" class="goback-link"><em>&gt;&gt;</em> 返回继续购物</a>      
+					</div>     
+				</div>
 			</div>
 		</div>
 	</section>
@@ -157,5 +180,7 @@
 			</div>
 		</div>
 	</footer>
+	<!-- 登录注册 -->
+	<div class="layer" style="display: none;">
 </body>
 </html>

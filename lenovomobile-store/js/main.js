@@ -39,9 +39,12 @@ require.config({
 require(["index"], function(index){
 	console.log(index.main());
 	console.log(index.indexData());
+	// console.log(index.register());
 });
 require(["public"], function(public){
 	console.log(public.main());
+	console.log(public.register());
+	console.log(public.enter());
 })
 
 //调用slide.js 中的 slide函数
@@ -54,6 +57,16 @@ require(["slide"], function(slide){
 //调用store-list.js中的list函数
 require(["store-list"], function(list){
 	console.log(list.list());
+})
+
+//调用cart.js中的cart函数
+require(["cart"], function(cart){
+	console.log(cart.cart());
+})
+
+require(["detail"], function(detail){
+	console.log(detail.detail());
+	console.log(detail.cartCookie());
 })
 
 
