@@ -1,11 +1,6 @@
 define(["jquery", "jquery-cookie"], function($){
 	function cart(){
-		
-		loadCart();
-
-
-		function loadCart(){
-			if(!$.cookie("cart")){
+		if(!$.cookie("cart")){
 				var html = "";
 				html += `<div class="empty-cart-box">
 							<i class="empty-cart-icon"><!-- 空空如也，快去购物 --></i>
@@ -13,7 +8,38 @@ define(["jquery", "jquery-cookie"], function($){
 							<a href="store-list.html" id="emptyCart" class="buy-button">去购物</a>
 						</div>`;
 				$(".empty-cart").html(html);
+			}else{
+				var cartHtml = "";
+				cartHtml += `<div class="shopping-cart-wrap" id="mycart">
+								<div class="shopping-cart-head clearfix">             
+									<span class="item1">商品名称</span>             
+									<span class="item2">单价</span>             
+									<span class="item3">数量</span>             
+									<span class="item4">小计</span>             
+									<span class="item5">操作</span>            
+								</div>            
+								<ul class="shopping-cart">
+								</ul>     
+								<div class="total-box clearfix">      
+									<div class="submit-button-box">       
+										<p style="font-size:13px"></p>       
+										<a id="toBalance" tobalance="" href="" class="buy-button">去结算</a>      
+									</div>            
+									<div class="total-price-box">       
+										<p><span class="total-price"></p>       
+										<a href="store-list.html" id="backToShopping" class="goback-link"><em>&gt;&gt;</em> 返回继续购物</a>      
+									</div>     
+								</div>
+							</div>`;
+				$(".cartBox").html(cartHtml);
 			}
+		
+		loadCart();
+
+
+
+		function loadCart(){
+
 			$.ajax({
 				url: 'data/detail.json',
 				type: 'get',
@@ -310,7 +336,9 @@ define(["jquery", "jquery-cookie"], function($){
 						
 					}
 				}
+				
 			});
+		
 		}
 		
 
@@ -368,21 +396,23 @@ define(["jquery", "jquery-cookie"], function($){
 					if(btnId == arr[i].id){
 						var tmp = confirm("您确定不购买该商品？");
 						if(tmp){
-							arr.splice(i,1);
+							arr.splice(0,1);
 							var cookieStr = JSON.stringify(arr);
 							$.cookie("cart", cookieStr, {
-								expires: 7
+								expires: -1
 							});
 							loadCart();
-							alert(1);
+							location.reload(true);
+							// alert(1);
 						}
 					}
 				}
 				var cookieStr = JSON.stringify(arr);
 				$.cookie("cart", cookieStr, {
-					expires: 7
+					expires: -1
 				});
 				loadCart();
+
 			});
 		return "购物车加载成功了"
 	}

@@ -40,8 +40,25 @@ define(["jquery"], function($){
 				$(".inter").find(".phoen-nav-list").css("display", "none");
 			});
 		});
+
+		$(document).scroll(function() {
+			var scrollHight = $(document).scrollTop();
+			console.log(scrollHight)
+			if(scrollHight > 400){
+				$("#goTop").css({
+					display: "block"
+				});
+			}else{
+				$("#goTop").css({
+					display: "none"
+				});
+			}
+		});
 		
-		
+		$("#goTop").click(function() {
+			// alert(1);
+			$("body,html").animate({scrollTop : 0},500);
+		});
 
 
 

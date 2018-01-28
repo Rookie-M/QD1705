@@ -2,11 +2,12 @@ define(["jquery", "jquery-cookie"], function($){
 	function detail(){
 		// sc_cart();
 		//加载详情页数据
+
 		$.ajax({
 			url: 'data/detail.json',
 			type: 'get',
 			success: function(data){
-				 console.log(data[13].id);
+				 // console.log(data[13].id);
 				// $("#gifts-list").html(comp);
 				var id = 0;
 				
@@ -27,6 +28,7 @@ define(["jquery", "jquery-cookie"], function($){
 				price(0, data);//添加价格
 				imgHover();//图片hover
 				// title(0, data);
+
 
 				//给颜色选项添加的点击事件
 				$(".color").find("li").click(function(){
@@ -333,6 +335,53 @@ define(["jquery", "jquery-cookie"], function($){
 			html += `<span>${arr[2].price[index].price0}</span>`;
 			$(".price").html(html);
 		}
+		/*
+			放大镜
+		*/
+		//移入显示
+		$(".slider-box").mouseenter(function(){
+			// console.log(1);
+			$(".float-box").css({
+				display: 'block'
+			});
+			$(".big-pic").css({
+				display: 'block'
+			});
+		});
+		//移出显示
+		$(".slider-box").mouseleave(function(){
+			// console.log(1);
+			$(".float-box").css({
+				display: 'none'
+			});
+			$(".big-pic").css({
+				display: 'none'
+			});
+		});
+		//移动跟随
+		$(".slider-box").mousemove(function(ev){
+			var l = ev.pageX - $(".slider-box").offset().left - $(".float-box").width() / 2;
+			var t = ev.pageY - $(".slider-box").offset().top - $(".float-box").height() / 2;
+			if(l > $(".slider-box").width() - $(".float-box").width()){
+				l = $(".slider-box").width() - $(".float-box").width();
+			}else if (l < 0){
+				l = 0;
+			}
+			if(t > $(".slider-box").height() - $(".float-box").height()){
+				t = $(".slider-box").height() - $(".float-box").height();
+			}else if(t < 0){
+				// console.log($(".img-box").offset().top);
+				// console.log($(".lens").css("top"));
+				t = 0;
+			}else if(t > 380){
+				t = 380;
+			}
+			$(".float-box").css({left : l,top : t});
+			$(".big-pic").find("#pic").css({
+				left: -l / 380 * 610,
+				top: -t / 380 * 620
+			});
+		})
 
 		// sc_cart();
 
@@ -394,7 +443,9 @@ define(["jquery", "jquery-cookie"], function($){
 				}
 			}
 			sc_cart();
-			alert($.cookie("cart"));
+
+
+			// alert($.cookie("cart"));
 			return false;
 		});
 		//购物车商品的数量
@@ -410,6 +461,8 @@ define(["jquery", "jquery-cookie"], function($){
 				$(".cart-icon").find("i").html(sum);
 			}
 		}
+
+		
 		return "添加购物车成功"
 	}
 

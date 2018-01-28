@@ -12,7 +12,7 @@
 	<section class="top">
 		<div class="inter">
 			<div class="top-links">
-				<a href="">Moto官网<span>|</span></a>
+				<a href="index.html">Moto官网<span>|</span></a>
 				<a href="">购买渠道<span>|</span></a>
 				<a href="">服务与支持<span>|</span></a>
 				<a href="">开发者平台<span>|</span></a>
@@ -45,7 +45,7 @@
 			</ul>
 			<ul class="shopp-car">
 				<li>
-					<a href="cart.html">
+					<a href="cart.html" target="_blank">
 						<span class="cart-icon">
 							购物车
 							<i>0</i>
@@ -75,7 +75,13 @@
 	             <!-- 动态加载大图 -->
 					<div class="slider-box">
 						<div class="img-box"></div>
+						<!-- 放大镜 -->
+						<div class="float-box"></div>
 						<ul class="control-bar"></ul>
+						<!-- 放大的图片 -->
+						<div class="big-pic">
+							<img src="images/detail/norm-golden-0.png" alt="" id="pic">
+						</div>
 					</div>
 	            </div>
 	        </div>
@@ -212,6 +218,11 @@
 	</footer>
 
 	<!-- 登录注册 -->
-	<div class="layer" style="display: none;">
+	<div class="layer" style="display: none;"></div>
+	<!-- 联系 -->
+	<div class="fixed-layer">
+        <a id="chat" href="" title="在线客服" class="service">在线客服</a>
+        <div id="goTop" title="返回顶部" class="goTop" style="display: none;">返回顶部</div>
+    </div>
 </body>
 </html>

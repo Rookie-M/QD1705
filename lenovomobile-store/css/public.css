@@ -749,3 +749,33 @@ footer {
 .passEnter {
   position: relative;
   display: block; }
+
+.fixed-layer {
+  height: 130px;
+  width: 60px;
+  position: fixed;
+  left: 50%;
+  bottom: 98px;
+  margin-left: 610px;
+  z-index: 10; }
+
+.fixed-layer a, .fixed-layer .goTop {
+  transition: all 0.2s linear;
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+  background: url(../images/goTop.png) no-repeat;
+  font-size: 0; }
+
+.fixed-layer .service {
+  background-position: 0 0; }
+
+.fixed-layer .goTop {
+  background-position: 0 -140px; }
+
+.fixed-layer .service:hover {
+  background-position: 0 -70px; }
+
+.fixed-layer .goTop:hover {
+  background-position: 0 -210px; }
